@@ -1,0 +1,36 @@
+{
+  "name": "inkurl",
+  "version": "1.0.0",
+  "description": "A minimalist, private, and serverless Markdown editor",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salvob41/inkurl.git"
+  },
+  "keywords": ["markdown", "editor", "serverless", "privacy", "codemirror"],
+  "author": "salvob41",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "gh-pages": "^6.0.0"
+  },
+  "dependencies": {
+    "@codemirror/state": "^6.4.0",
+    "@codemirror/view": "^6.22.0",
+    "@codemirror/language": "^6.9.0",
+    "@codemirror/commands": "^6.3.0",
+    "@codemirror/search": "^6.5.0",
+    "@codemirror/autocomplete": "^6.11.0",
+    "@codemirror/lang-markdown": "^6.2.0",
+    "@lezer/highlight": "^1.1.0",
+    "@lezer/markdown": "^1.2.0",
+    "marked": "^9.1.0",
+    "codemirror": "^6.0.0"
+  }
+}

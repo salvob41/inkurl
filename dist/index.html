@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkUrl - Minimalist Markdown Editor</title>
+  <script type="module" crossorigin src="/inkurl/assets/index-B5kukc0F.js"></script>
+  <link rel="modulepreload" crossorigin href="/inkurl/assets/codemirror-B3FwnzaM.js">
+  <link rel="modulepreload" crossorigin href="/inkurl/assets/marked-CcPTh5wC.js">
+  <link rel="stylesheet" crossorigin href="/inkurl/assets/index-65CRsCIm.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>InkUrl</h1>
+            <p>A minimalist, private, and serverless Markdown editor</p>
+        </header>
+        
+        <div class="controls">
+            <div class="view-toggles">
+                <button id="viewEditor" class="view-btn active" data-view="editor">
+                    <span class="icon">📝</span>
+                    <span class="label">Editor</span>
+                </button>
+                <button id="viewBoth" class="view-btn active" data-view="both">
+                    <span class="icon">📊</span>
+                    <span class="label">Both</span>
+                </button>
+                <button id="viewPreview" class="view-btn" data-view="preview">
+                    <span class="icon">👁️</span>
+                    <span class="label">Preview</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <button id="clearContent" class="btn">Clear</button>
+                <button id="testSoftWraps" class="btn">Test Soft-Wraps</button>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="editor-panel" id="editorPanel">
+                <div class="line-numbers" id="lineNumbers"></div>
+                <div class="editor-container" id="editorContainer">
+                    <div class="editor-area" id="editorArea" contenteditable="true" spellcheck="false"></div>
+                </div>
+            </div>
+            
+            <div class="preview-panel" id="previewPanel">
+                <div class="preview-content" id="previewContent"></div>
+                <div class="preview-gutter" id="previewGutter"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
